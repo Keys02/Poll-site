@@ -2,13 +2,14 @@
     /* Front controller */
     require_once "models/PageData.php";
 
-    $page = new PageData('PHP/MySQL site poll', "<link rel='stylesheet' href='css/style.css'");
+    $page = new PageData("PHP/MySQL site poll", "<link rel='stylesheet' href='css/style.css'");
 
-    $page->setContent("<h1>Everything works so far!</h1>");
+    require_once "controllers/poll.php";
 
-    $page->appendContent("<div>..and content goes here.</div>");
+    // $page->setContent($poll_controller);
 
-    require_once "views/poll-page.php";
+    require_once "views/page.php";
 
+    echo $poll_template;
     echo $page;
 ?>
