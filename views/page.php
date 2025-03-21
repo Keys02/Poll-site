@@ -2,7 +2,6 @@
 /*
     View: To be rendered in the front controller
 */
-
     require_once "partials/_header.php";
      
     $main_content =  "
@@ -13,6 +12,6 @@
     ";
     require_once "partials/_footer.php";
 
-    $page = $header . $main_content . $footer
+    $webpage = $header . $main_content . $footer
 
 ?>

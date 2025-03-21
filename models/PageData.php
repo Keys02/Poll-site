@@ -36,25 +36,25 @@
         /**********************
          *      Setters
          **********************/
-        public function setStylesheet(string $value) {
+        public function setStylesheet(string $value) : void {
             if(strpos($value, '<')) {
                 $this->css = $value;
             }
         }
 
-        public function appendContent(string $value) {
+        public function appendContent(string $value) : void {
             $this->content .= $value;
         }
 
-        public function setContent(string $value) {
+        public function setContent(string $value) : void {
             $this->content = $value;
         }
 
-        public function setTitle(string $value){
+        public function setTitle(string $value) : void {
             $this->title = $value;
         }
 
-        public function setNav(string $value) {
+        public function setNav(string $value) : void {
             $this->nav = $value;
         }
 

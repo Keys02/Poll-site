@@ -1,4 +1,11 @@
 /*************************
+*         Variables
+*************************/
+:root {
+    --orange: rgb(245, 164, 72);
+}
+
+/*************************
 *         Reset
 *************************/
 html {
@@ -10,6 +17,8 @@ html {
 }
 
 body {
+    padding: 0;
+    margin: 0;
     font-family: poppins, Helvetica, sans-serif;
 }
 
@@ -24,4 +33,43 @@ body {
 
 footer {
     text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+fieldset {
+    border: none;
+    background-color: #efefef;
+    padding: 0;
+}
+
+legend {
+    text-align: center;
+    background-color: var(--orange);
+    width: 100%;
+}
+
+.poll-quest {
+    font-size: 1.2em;
+}
+
+input[type='submit'] {
+    background-color: var(--orange);
+    border: none;
+    padding: 5px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    color: white;
+    margin-top: 1.5em;
+}
+
+input[type='submit']:hover {
+    background-color: rgb(224, 149, 64);
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--orange);
 }
