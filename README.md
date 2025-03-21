@@ -3,9 +3,9 @@ Poll site built with HTML, CSS and PHP. To learn the basic of Model-View-Control
 
 ```
 └── Poll
+    └── css
     └── controllers
         └── poll.php
-    └── css
         └── style.css
     └── models
         └── database.php
@@ -23,5 +23,25 @@ Poll site built with HTML, CSS and PHP. To learn the basic of Model-View-Control
     └── playground.php
     └── README.md
 ```
+## Getting started
+Using MySQL or MariaDB
+``` sql
 
+CREATE DATABASE playground;
+
+USE playground;
+
+CREATE TABLE poll (
+poll_id INT NOT NULL AUTO_INCREMENT,
+poll_question TEXT,
+yes INT DEFAULT 0,
+no INT DEFAULT 0,
+PRIMARY KEY (poll_id)
+);
+
+// inserting a single row of data.
+INSERT INTO poll (poll_question) 
+VALUES
+("Are you familiar with Golang spiced with htmx?")
+```
 **Author:** Keys🚀
