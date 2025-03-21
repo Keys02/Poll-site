@@ -2,6 +2,11 @@
     /*
         View: To be rendered in the front controller
     */
+    $data_found = isset($poll_data);
+    if(!$data_found) {
+        trigger_error('No data created when');
+    }
+
     $poll_template = "
         <aside id='poll'>
             <form method='post' action='index.php'>
@@ -14,15 +19,17 @@
                                 <option value='no'>No, not really!</option>
                             </select>
                         </li>
-                        <input type='submit' value='post'>
+                        <input type='submit' name='submit-answer' value='Answer'>
                     </ul>
                 </fieldset>
             </form>
-            <h1>Poll results</h1>
-            <ul>
-                <li>{$poll_data->yes} said yes</li>
-                <li>{$poll_data->no} said no</li>
-            </ul>
+            <div class='poll-result'>
+                <h2 class='poll-result-heading'>Poll results</h2>
+                <ul>
+                    <li>{$poll_data->yes} said <span class='yes'>yes</span></li>
+                    <li>{$poll_data->no} said <span class='no'>no</span></li>
+                </ul>
+            </div>
         <aside>
     "
 ?>

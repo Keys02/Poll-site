@@ -25,6 +25,10 @@ body {
 /*************************
 *         main
 *************************/
+main {
+    margin-top: .5em;
+}
+
 #container {
     width: 80%;
     margin: 0 auto;
@@ -72,4 +76,33 @@ input[type='submit']:hover {
 
 footer {
     background-color: var(--orange);
+}
+
+.poll-result {
+    background-color: #efefef;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.poll-result ul {
+    margin: 0;
+    padding: 10px;
+}
+
+.poll-result-heading {
+    margin-bottom: 0;
+    padding-left: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--orange);
+    font-size: 1.3em;
+}
+
+
+.yes {
+    color: rgb(11, 150, 11)
+}
+
+.no {
+    color: red;
 }

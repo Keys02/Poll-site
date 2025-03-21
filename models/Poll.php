@@ -16,5 +16,15 @@
             $poll_data = $statement->fetchObject();
             return $poll_data;
         }
+
+        public function updatePoll($input) {
+            if($input === "yes") {
+                $sql_update_query = "UPDATE poll SET yes = yes + 1 WHERE poll_id = 1";
+            } else if($input === "no") {
+                $sql_update_query = "UPDATE poll SET no = no + 1 WHERE poll_id = 1";
+            }
+            $update_database = $this->database->prepare($sql_update_query);
+            $update_database->execute();
+        }
     }
 ?>
