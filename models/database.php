@@ -12,7 +12,5 @@
         $error_message = $e->getMessage();
         $page_data->setContent("<h1>Connection failed!</h1><p>$e</p>");
         exit();
-    }finally {
-        echo "Connection successful!!!";
     }
 ?>
