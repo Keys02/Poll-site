@@ -1,4 +1,7 @@
 <?php
+    /*
+        View: To be rendered in the front controller
+    */
     $poll_template = "
         <aside id='poll'>
             <h1>Poll results</h1>

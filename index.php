@@ -6,8 +6,6 @@
 
     require_once "controllers/poll.php";
 
-    // $page->setContent($poll_controller);
-
     require_once "views/page.php";
 
     echo $poll_template;

@@ -1,4 +1,8 @@
 <?php
+    /*
+        Model: To be hooked to the page controller and render on the front controller
+    */
+
     class PageData {
         private string $title = "";
         private string $css = "";
