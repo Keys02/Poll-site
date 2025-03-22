@@ -1,5 +1,6 @@
 # Poll Site
-Poll site built with HTML, CSS and PHP. To learn the basic of Model-View-Controller(MVC)👩🏽‍💻 architecture.
+Poll site built with HTML, CSS and PHP.  
+The project is geared towards learning the basics of Model-View-Controller(MVC)👩🏽‍💻 architecture.
 
 ```
 └── Poll
@@ -26,17 +27,16 @@ Poll site built with HTML, CSS and PHP. To learn the basic of Model-View-Control
 ## Getting started
 Using MySQL or MariaDB
 ``` sql
-
 CREATE DATABASE playground;
 
 USE playground;
 
 CREATE TABLE poll (
-poll_id INT NOT NULL AUTO_INCREMENT,
-poll_question TEXT,
-yes INT DEFAULT 0,
-no INT DEFAULT 0,
-PRIMARY KEY (poll_id)
+    poll_id INT NOT NULL AUTO_INCREMENT,
+    poll_question TEXT,
+    yes INT DEFAULT 0,
+    no INT DEFAULT 0,
+    PRIMARY KEY (poll_id)
 );
 
 // inserting a single row of data.
