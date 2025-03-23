@@ -37,7 +37,7 @@
          *      Setters
          **********************/
         public function setStylesheet(string $value) : void {
-            if(strpos($value, '<')) {
+            if(strpos($value, '<') !== false) {
                 $this->css = $value;
             }
         }
